@@ -1,0 +1,151 @@
+  .virtual-assistant-section {
+            height: 100vh;
+            background-color: rgb(218, 218, 218);
+            display: grid;
+            grid-template-rows: 80px 130px 150px 200px 80px;
+            grid-template-columns: 120px 1fr 1fr 100px;
+            grid-template-areas: ".  .  .  ."
+                ".  virtassistsectstylimgcntr   virtassistsectheadh1  ."
+                ".  virtassistsectstylimgcntr   virtassistsectpara  ."
+                ".  virtassistsectstylimgcntr  virtassistsectcardscontr  ."
+                ".  .  .  .";
+        }
+
+        .virt-assist-sect-styl-img-cntr {
+            position: relative;
+            /* justify-self: center; */
+            height: 450px;
+            width: 300px;
+            border-radius: 150px;
+            grid-area: virtassistsectstylimgcntr;
+            border: 2px solid rgba(0, 0, 0, 0.589);
+        }
+
+        .virt-assist-sect-styl-img {
+            justify-self: center;
+            margin-top: 10px;
+            background: url('https://images.pexels.com/photos/12902877/pexels-photo-12902877.jpeg') no-repeat center center/cover;
+            height: 430px;
+            width: 280px;
+            border-radius: 140px;
+            filter: grayscale(1);
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.267);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .virt-assist-sect-styl-img:hover {
+            scale: 1.01234;
+            box-shadow: 0 0 10px black;
+        }
+
+        .virt-assist-sect-styl-dot {
+            position: absolute;
+            z-index: 2;
+            left: -6px;
+            bottom: 110px;
+            background-color: black;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .virt-assist-sect-head-h1 {
+            font-family: "Oswald", sans-serif;
+            font-size: 80px;
+            color: black;
+            font-weight: 800;
+            text-align: left;
+            grid-area: virtassistsectheadh1;
+        }
+
+        .virt-assist-sect-para {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            color: black;
+            text-align: left;
+            grid-area: virtassistsectpara;
+        }
+
+        .virt-assist-sect-cards-contr {
+            display: flex;
+            gap: 30px;
+            grid-area: virtassistsectcardscontr;
+        }
+
+        .virt-sect-card {
+            height: 100px;
+            width: 300px;
+        }
+
+        .virt-sect-card-icon {
+            font-size: 30px;
+            background-color: rgb(124, 124, 124);
+            padding: 5px;
+            border-radius: 50%;
+            align-self: flex-start;
+            justify-self: flex-start;
+            margin-right: 20px;
+        }
+
+        .virt-sect-card-h1 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            margin-left: 68px;
+            margin-top: -30px;
+
+        }
+
+        .virt-sect-card-para {
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            text-align: start;
+            margin-top: 25px;
+            margin-left: 8px;
+        }
+
+        @media (max-width: 768px) {
+          
+            .virtual-assistant-section {
+                height: 120vh;
+                background-color: rgb(218, 218, 218);
+                display: grid;
+                grid-template-rows: 50px 350px 120px 200px 120px 50px ;
+                grid-template-columns: 50px 1fr 50px;
+                grid-template-areas: ".  .  ."
+                    ".  virtassistsectstylimgcntr  . "
+                    ".  virtassistsectheadh1  ."
+                    ".  virtassistsectpara    ."
+                    ". virtassistsectcardscontr ."
+                    ".  .  .";
+            }
+             .virt-assist-sect-styl-img-cntr {
+                height: 300px;
+                justify-self: center;
+                 width: 200px;
+             }
+               .virt-assist-sect-styl-img {
+                height: 280px;
+                 width: 180px;
+               }
+                .virt-assist-sect-styl-dot {
+                    left: -8px;
+                }
+             .virt-assist-sect-cards-contr {
+                justify-self: center;
+            display: grid;
+            gap: 80px;
+        }
+        .virt-assist-sect-head-h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+          .virt-assist-sect-para {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        }

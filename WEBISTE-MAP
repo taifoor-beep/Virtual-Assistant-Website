@@ -1,0 +1,13 @@
+Website-structure-folder/
+│
+├── index.html
+├── styles/
+│   ├── front-section.css
+│   └── virtual-assistant-section.css
+│
+├── scripts/
+│   └── script.js
+│
+└── assets/
+    └── images/
+        └── background.png 

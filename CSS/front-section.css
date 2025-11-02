@@ -1,0 +1,382 @@
+  .front-section {
+            background: rgba(255, 255, 255, 0.822);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 30px;
+            color: #333;
+            text-align: center;
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-columns: 30px 1fr 1fr 30px;
+            grid-template-rows: 100px 40px 40px 160px 80px 100px 150px 200px 50px;
+            grid-template-areas: "navbar  navbar    navbar  navbar"
+                ".  .     frontstylimgcntr  ."
+                ".  frontpara1    frontstylimgcntr  ."
+                ".  fronthead1    frontstylimgcntr  ."
+                ".  frontpara2    .  ."
+                ".  frontbtn    .  ."
+                ".  .    .  ."
+                ".   frontnusinesstrandsarea    frontbottomcardscntr  ."
+                ".  .    .  ."
+            ;
+
+        }
+
+        .navbar {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 10px;
+            grid-area: navbar;
+        }
+
+        .nav-h3 {
+            font-family: "ABeeZee", sans-serif;
+            color: black;
+            font-size: 22px;
+            font-weight: 800;
+            margin-right: auto;
+
+        }
+
+        .nav-links {
+            margin-top: -3px;
+        }
+
+        .nav-links a {
+
+            margin: 13px;
+            padding: 5px;
+            font-size: 15px;
+            font-weight: 400;
+            /* border-radius: 10px; */
+            text-decoration: none;
+            border-left: rgba(0, 0, 255, 0) 2px solid;
+            color: black;
+            font-family: "IBM Plex Sans", sans-serif;
+            transition: all 0.2s ease-in-out;
+            background-color: rgba(0, 0, 255, 0);
+        }
+
+        .nav-links a:hover {
+            border-left: blue 2px solid;
+            background-color: rgba(0, 0, 255, 0.089);
+        }
+
+        .nav-rgtr-btn {
+            text-align: center;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            border: 1px solid rgb(112, 112, 112);
+            background-color: rgba(255, 255, 255, 0.192);
+            margin-left: auto;
+
+        }
+
+        .nav-rgtr-btn:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .front-para-1 {
+            font-family: "IBM Plex Sans", sans-serif;
+            text-align: start;
+            margin-left: 30px;
+            font-size: 13px;
+            grid-area: frontpara1;
+        }
+
+        .front-head-1 {
+            color: black;
+            font-family: "ABeeZee", sans-serif;
+            text-align: start;
+            margin-left: 20px;
+            font-weight: 1000;
+            font-size: 60px;
+            width: 450px;
+            grid-area: fronthead1;
+        }
+
+        .front-para-2 {
+            text-align: left;
+            margin-left: 24px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            width: 400px;
+            grid-area: frontpara2;
+        }
+
+        .front-btn {
+            text-align: center;
+            margin-left: 25px;
+            font-family: "Jost", sans-serif;
+            padding: 10px;
+            width: 30%;
+            height: 50px;
+            background-color: black;
+            border: none;
+            border-radius: 50px;
+            color: white;
+            grid-area: frontbtn;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.438);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .front-btn:hover {
+            scale: 1.03;
+            box-shadow: 2px 5px 10px rgb(0, 0, 0);
+        }
+
+        .front-styl-img:hover {
+            scale: 1.01234;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+        }
+
+        .front-styl-img-cntr {
+            position: relative;
+            justify-self: center;
+            height: 450px;
+            width: 300px;
+            border-radius: 150px;
+            grid-area: frontstylimgcntr;
+            border: 2px solid rgba(0, 0, 0, 0.589);
+        }
+
+        .front-styl-img {
+            justify-self: center;
+            margin-top: 10px;
+            background: url('https://images.pexels.com/photos/4065158/pexels-photo-4065158.jpeg') no-repeat center center/cover;
+            height: 430px;
+            width: 280px;
+            border-radius: 140px;
+            filter: grayscale(1);
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.267);
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .front-styl-img-head {
+            position: absolute;
+            z-index: 2;
+            bottom: -60px;
+            left: -140px;
+            font-family: "IBM Plex Sans", sans-serif;
+            color: transparent;
+            background-color: transparent;
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            font-size: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .front-styl-cntr-para-dot {
+            position: absolute;
+            z-index: 2;
+            right: -5px;
+            bottom: 110px;
+            background-color: black;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+
+        .front-business-trands-area {
+            margin-left: 10px;
+            text-align: left;
+            grid-area: frontnusinesstrandsarea;
+        }
+
+        .front-business-trands-area-h1 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 30px;
+            color: black;
+            font-weight: 800;
+            margin-left: 6px;
+        }
+
+        .front-business-trands-area-para {
+            padding: 8px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            width: 280px;
+            color: black;
+        }
+
+        .front-business-trands-area-h3 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 15px;
+            color: black;
+            font-weight: 800;
+            padding: 5px;
+            margin-left: 80px;
+        }
+
+        .front-bottom-cards-cntr {
+            grid-area: frontbottomcardscntr;
+            display: flex;
+            gap: 20px;
+            justify-content: left;
+            align-items: start;
+            margin-top: -10px;
+        }
+
+        .front-bottom-card {
+            height: 170px;
+            width: 350px;
+            background-color: rgba(240, 248, 255, 0.205);
+            border: 2px solid rgb(246, 251, 255);
+            border-radius: 8px;
+            box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.301);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .front-bottom-card:hover {
+            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.541);
+            scale: 1.03;
+        }
+
+        .front-bottom-card-icon {
+            padding: 10px;
+            color: black;
+        }
+
+        .front-bottom-card-h2 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 18px;
+            color: black;
+            font-weight: 800;
+            padding: 5px;
+            /*margin-left: 80px; */
+        }
+
+        .front-bottom-card-para {
+            text-align: center;
+            padding: 8px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            /* width: 280px; */
+            color: black;
+        }
+
+
+        @media (max-width : 768px){
+              body {
+                background: url('https://images.pexels.com/photos/5701941/pexels-photo-5701941.jpeg') no-repeat center center/cover;
+                height: auto;
+                display: grid;
+            }
+
+            .front-section{
+                background: rgba(255, 255, 255, 0.822);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(10px);
+                padding: 30px;
+                color: #333;
+                text-align: center;
+                width: auto;
+                height:auto;
+                display: grid;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 30px 1fr 30px;
+                grid-template-rows: 50px 20px 220px 50px 90px 200px 300px 200px 400px 50px;
+                grid-template-areas: "navbar  navbar   navbar"
+                    ".  frontpara1  ."
+                    ".  fronthead1  ."
+                    ".  frontpara2  ."
+                    ".  frontbtn  ."
+                    ".  frontstylimgcntr ."
+                    ".  frontstylimgcntr  ."
+                    ".   frontnusinesstrandsarea  ."
+                    ".    frontbottomcardscntr   ."
+                    ".    frontbottomcardscntr   ."
+                ;
+            }
+
+            .navbar {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: 100px 300px 80px;
+                grid-template-rows: 10px;
+                grid-area: navbar;
+            }
+
+            .nav-links {
+                justify-self: center;
+                align-self: center;
+                display: flex;
+            }
+
+            .nav-links a {
+                border-bottom: 1px black solid;
+                margin: 1px;
+                padding: 2px;
+                font-size: 12px;
+
+            }
+
+            .nav-rgtr-btn {
+                text-align: center;
+                width: 70px;
+                font-size: 12px;
+            }
+
+            .front-head-1 {
+                width: 380px;
+                text-align: center;
+                margin: 0px;
+            }
+
+            .front-para-1 {
+                text-align: center;
+                margin: 0px;
+            }
+
+            .front-head-1 {
+                width: 380px;
+            }
+
+            .front-para-2 {
+                width: 380px;
+                text-align: center;
+                margin: 0px;
+                padding: 10px;
+            }
+
+            .front-btn {
+                width: 100px;
+                justify-self: center;
+                align-self: center;
+                margin: 0px;
+            }
+
+            .front-styl-img-head {
+                font-size: 100px;
+                left: 0px;
+                -webkit-text-stroke: 1px rgb(240, 240, 240);
+            }
+
+            .front-business-trands-area {
+                margin-left: 50px;
+                align-self: center;
+                justify-self: center;
+            }
+
+            .front-bottom-cards-cntr {
+                display: grid;
+                gap: 20px;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .front-bottom-card {
+                width: 300px;
+                height: 200px;
+            }
+
+        }
