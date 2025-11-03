@@ -1,0 +1,52 @@
+/* this file is for the support and success section */
+@media (max-width : 768px) {}
+
+.support-success-section {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 80px;
+    grid-template-rows: 80px 100px 300px 100px 100px 80px;
+    grid-template-areas: ".  .  .  ."
+        ".  .  .  ."
+        ".  .  .  ."
+        ".  .  .  ."
+        ".  .  .  ."
+        ".  .  .  .";
+}
+
+.support-success-section-para-1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: start;
+    margin-left: 30px;
+    font-size: 13px;
+    grid-area: supportsuccesssectionpara1;
+}
+
+.support-success-section-head-1 {
+    color: black;
+    font-family: "ABeeZee", sans-serif;
+    text-align: start;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 45px;
+    width: 450px;
+    grid-area: supportsuccesssectionhead1;
+}
+
+.support-success-section-head-2 {
+    font-family: "ABeeZee", sans-serif;
+    text-align: start;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 45px;
+    width: 300px;
+    grid-area: supportsuccesssectionhead2;
+}
+.support-success-section-para-2{
+     text-align: left;
+            margin-left: 24px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            width: 400px;
+            grid-area: supportsuccesssectionpara2;
+}
