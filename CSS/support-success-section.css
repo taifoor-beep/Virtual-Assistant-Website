@@ -2,14 +2,17 @@
 @media (max-width : 768px) {}
 
 .support-success-section {
+    background-color: rgba(255, 255, 255, 0.822);
+     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
     display: grid;
-    grid-template-columns: 80px 1fr 1fr 80px;
-    grid-template-rows: 80px 100px 300px 100px 100px 80px;
+    grid-template-columns: 50px 1fr 1fr 50px;
+    grid-template-rows: 80px 50px 200px 100px 100px 80px;
     grid-template-areas: ".  .  .  ."
-        ".  .  .  ."
-        ".  .  .  ."
-        ".  .  .  ."
-        ".  .  .  ."
+        ".  supportsuccesssectionpara1   supportsuccesssectioncardcontainer  ."
+        ".  supportsuccesssectionhead1   supportsuccesssectioncardcontainer  ."
+        ".  supportsuccesssectionhead2   supportsuccesssectioncardcontainer  ."
+        ".  supportsuccesssectionpara2   supportsuccesssectioncardcontainer  ."
         ".  .  .  .";
 }
 
@@ -49,4 +52,37 @@
             font-size: 15px;
             width: 400px;
             grid-area: supportsuccesssectionpara2;
+}
+.support-success-section-card-container{
+    grid-area: supportsuccesssectioncardcontainer;
+}
+.support-section-card-1{
+    width: 130px;
+    height: 180px;
+    background-color: rgba(146, 146, 146, 0.041);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid white;
+    
+}
+.support-section-card-1-icon{
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+.support-section-card-1-para{
+      font-family: "ABeeZee", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 5px;
+
+    }
+    .support-section-card-1-h1{
+        font-family: "ABeeZee", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 5px;
 }
