@@ -1,5 +1,5 @@
 /* this file is for the support and success section */
-@media (max-width : 768px) {}
+
 
 .support-success-section {
     background-color: rgba(255, 255, 255, 0.822);
@@ -57,15 +57,21 @@
     grid-area: supportsuccesssectioncardcontainer;
 }
 .support-section-card-1{
-    width: 130px;
-    height: 180px;
-    background-color: rgba(146, 146, 146, 0.041);
-    backdrop-filter: blur(5px);
+      width: 140px;
+      height: 185px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    border: 2px solid white;
     
 }
 .support-section-card-1-icon{
@@ -85,4 +91,148 @@
         font-weight: 700;
         font-size: 20px;
         padding: 5px;
+}
+.support-section-card-2{
+    position: absolute;
+     right: 250px;
+     top: 60px;
+     width: 180px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .support-section-card-2-icon{
+   width: 80px;
+   /* border-radius: 50%; */
+   justify-self: center;
+   margin-top: 5px;
+  
+}
+.support-section-card-2-h1-1{
+     font-family: "ABeeZee", sans-serif;
+        font-weight: 800;
+        font-size: 15px;
+        padding: 8px;
+        color: black;
+}
+.support-section-card-2-para{
+    padding-top: 20px;
+}
+.support-section-card-2-h1-2{
+    font-family: "Bebas Neue", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        padding: 5px;
+}
+.support-section-card-2:hover,.support-section-card-1:hover,.support-section-card-3:hover{
+    scale: 1.03;
+    box-shadow: 0 0 10px rgb(58, 58, 58);
+}
+.support-section-card-3{
+    width: 320px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 80px;
+  border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.35s ease;
+    justify-content: center;
+    align-items: center;
+
+}
+.support-section-card-3-icon{
+     width: 60px;
+   margin-top: 10px;
+   margin-right:220px;
+   align-self: self-start;
+}
+.support-section-card-3-h1{
+     font-family: "ABeeZee", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        margin-top:-65px;
+        margin-left: 20px;
+        color: black;
+}
+.support-section-card-3-para-1{
+    padding-top: 20px;
+       font-family: "ABeeZee", sans-serif;
+       font-size:14px ;
+       margin-top: -15px;
+       margin-left: 10px;
+}
+.support-section-card-3-para-2{
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 400;
+      margin-top: 15px;
+      padding: 15px;
+      font-size: 15px;
+      text-align: left;
+      line-height: 20px;
+}
+@media (max-width : 768px) {
+    .support-success-section {
+    background-color: rgba(255, 255, 255, 0.822);
+     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows:  80px 50px 200px 100px 100px 400px 80px;
+    grid-template-areas: ". . ."
+        ". supportsuccesssectionpara1 ."
+        ". supportsuccesssectionhead1 ."
+        ". supportsuccesssectionhead2 ."
+        ". supportsuccesssectionpara2 ."
+        ". supportsuccesssectioncardcontainer ."
+        ". . .";
+}
+.support-success-section-para-1{
+    text-align: center;
+}
+.support-success-section-head-1{
+    text-align: center;
+}
+.support-success-section-head-2{
+    text-align: center;
+    margin-left: 90px;
+}
+.support-success-section-para-2{
+text-align: center;
+}
+.support-section-card-2{
+    position: absolute;
+     right: 100px;
+     top:510px;
+     width: 180px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
