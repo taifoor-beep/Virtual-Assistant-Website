@@ -1,0 +1,141 @@
+.client-testimonials-section{
+     height: 120vh;
+            background-color: rgb(218, 218, 218);
+            display: grid;
+            gap: 50px;
+            padding-bottom: 20px;
+            grid-template-rows:50px 50px 230px 300px 100px;
+            grid-template-columns:100px 1fr 100px ;
+            grid-template-areas:". . ."
+                                ". client-test-para-1 ."
+                                ". client-test-sect-head-1 ."
+                                ". client-sect-review-container ."
+                                ". . .";
+}
+.client-test-sect-para-1{
+     font-family: "IBM Plex Sans", sans-serif;
+            text-align: center;
+            font-size: 13px;
+            grid-area: client-test-para-1;
+}
+.client-test-sect-head-1{
+            color: black;
+            font-family: "ABeeZee", sans-serif;
+            text-align: center;
+            justify-self: center;
+            font-weight: 1000;
+            font-size: 60px;
+            width: 700px;
+            grid-area:client-test-sect-head-1;
+}
+.client-sect-review-container{
+     gap: 100px;
+     padding-top: 5px;
+     display: flex;
+     justify-content: center;
+     grid-area: client-sect-review-container;
+}
+
+/* review 1 */
+
+.client-sect-review-cont-img-1{
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     object-fit: cover;
+     /* justify-self: center;
+     align-self: center;   */
+}
+.client-sect-review-cont-h1-1{
+      font-family: "ABeeZee", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        margin-top:-60px;
+        margin-left: 80px;
+        color: black;
+}
+.client-sect-review-1-cont-para-1{
+      padding-top: 20px;
+       font-family: "ABeeZee", sans-serif;
+       font-size:14px ;
+       margin-top: -15px;
+       margin-left: 88px;
+}
+.client-sect-review-1-cont-para-2{
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-left: -10px;
+      padding: 15px;
+      font-size: 20px;
+      text-align: left;
+      line-height: 30px;
+      width: 250px;
+}
+
+  /* review 2 */
+
+.client-sect-review-cont-img-2{
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     object-fit: cover;
+     justify-self: center;
+     align-self: center;  
+}
+.client-sect-review-cont-h1-2{
+      font-family: "ABeeZee", sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        margin-top:-63px;
+        margin-left: 90px;
+        color: black;
+}
+.client-sect-review-2-cont-para-1{
+      padding-top: 20px;
+       font-family: "ABeeZee", sans-serif;
+       font-size:14px ;
+       margin-top: -15px;
+       margin-left: 97px;
+}
+.client-sect-review-2-cont-para-2{
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 400;
+      margin-top: 15px;
+      margin-left: -10px;
+      padding: 15px;
+      font-size: 20px;
+      text-align: left;
+      line-height: 30px;
+      width: 250px;
+}
+
+/* 768px brake */
+
+@media (max-width : 768px){
+     .client-testimonials-section{
+     height: 155vh;
+     }
+     .client-test-sect-head-1{
+            color: black;
+            font-family: "ABeeZee", sans-serif;
+            text-align: center;
+            justify-self: center;
+            font-weight: 1000;
+            font-size: 60px;
+            width: 400px;
+            grid-area:client-test-sect-head-1;
+}
+
+     .client-sect-review-container{
+     gap: 50px;
+     display: grid;
+     padding-top: 150px;
+     justify-content: center;
+     grid-area: client-sect-review-container;
+}
+
+
+
+
+}
