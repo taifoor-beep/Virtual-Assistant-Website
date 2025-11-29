@@ -3,7 +3,9 @@ Website-structure-folder/
 ├── index.html
 ├── styles/
 │   ├── front-section.css
-│   └── virtual-assistant-section.css
+│   |── virtual-assistant-section.css
+│   ├── support-success-section.css
+│   └── client-testimonials-section.css
 │
 ├── scripts/
 │   └── script.js
